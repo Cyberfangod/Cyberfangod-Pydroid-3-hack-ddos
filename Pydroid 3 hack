@@ -1,0 +1,81 @@
+# Cyberfangod-Pydroid-3-hack-ddos
+Merhaba Milisatandan thugfedaisi eşşek oldumdan dolayı kusura bakmayın Türk Yapımı :D
+KOPYALA
+
+import time
+import webbrowser  # Eklediğimiz kütüphane
+
+def ascii_sanat():
+    print("""
+   _____    .__  .__    .__                      __                      ___________                            
+  /     \   |__| |  |   |__|   ______ _____    _/  |_  _____      ____   \__    ___/   ____   _____      _____  
+ /  \\ /  \\  |  | |  |   |  |  /  ___/ \\__  \\   \\   __\\ \\__  \\    /    \\    |    |    _/ __ \\  \\__  \\    /     \\ 
+/    Y    \\ |  | |  |__ |  |  \\___ \\   / __ \\_  |  |    / __ \\_ |   |  \\   |    |    \\  ___/   / __ \\_ |  Y Y  \\
+\\____|__  / |__| |____/ |__| /____  > (____  /  |__|   (____  / |___|  /   |____|     \\___  > (____  / |__|_|  /
+        \\/                        \\/       \\/               \\/       \\/                   \\/       \\/        \\/ 
+    """)
+
+def kayit_ol():
+    isim = input("İsminizi giriniz: ")
+    sifre = input("Şifrenizi giriniz: ")
+    print(f"Kayıt başarılı! Hoş geldin, {isim}!")
+
+def ana_menu():
+    while True:
+        print("\nAna Menü:")
+        print("1. Ddos")
+        print("2. Sms Bomber")
+        print("3. Ayyildiz tim data")  # Menüye yeni seçenek ekledik
+        print("4. Çıkış")  # Yeni seçenek ekledik
+        
+        secim = input("Lütfen bir seçenek girin (1-4): ")
+        
+        if secim == '1':
+            paket_gonder()
+        elif secim == '2':
+            numara()
+        elif secim == '3':
+            veri_dosyasi_indir()
+            break
+        elif secim == '4':
+            print("Çıkış yapılıyor...")
+            break
+        else:
+            print("Geçersiz seçenek, tekrar deneyin.")
+
+def paket_gonder():
+    site_adi = input("Site adını giriniz: ")
+    
+    print("Paketler Gönderiliyor:")
+    for i in range(500):
+        time.sleep(1)
+        print(f"Paketler Gönderiliyor (+) {i+1} kere")
+
+    print("Gönderildi (milisaniye Caner)")
+
+def numara():
+    numara_giriniz = input("Numarayı giriniz (90): ")
+    limit = 50
+
+    for i in range(limit):
+        time.sleep(1)
+        if i % 2 == 0:
+            print(f"Mesaj Gönderildi (+) {i+1} kere")
+        else:
+            print(f"Mesaj Gönderilmedi (-) {i+1} kere")
+
+def veri_dosyasi_indir():
+    print("Veri Dosyasını İndir seçeneği seçildi.")
+    print("İndirme linki: https://www.mediafire.com/file/x0m25z7hzj8koer/ayy%25C4%25B1ld%25C4%25B1z_tim_data.txt/file")
+    
+    cevap = input("Dosyayı indirmek için tarayıcıyı açmak ister misiniz? (E/H): ")
+    
+    if cevap.upper() == 'E':
+        webbrowser.open("https://www.mediafire.com/file/x0m25z7hzj8koer/ayy%25C4%25B1ld%25C4%25B1z_tim_data.txt/file")
+    else:
+        print("İndirme işlemi iptal edildi.")
+
+if __name__ == "__main__":
+    ascii_sanat()
+    kayit_ol()
+    ana_menu()
